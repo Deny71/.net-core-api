@@ -18,6 +18,10 @@ namespace Catalog.Infrastructure
         {
             modelBuilder.ApplyConfiguration(new
                 ItemEntitySchemaDefinition());
+            modelBuilder.ApplyConfiguration(new
+                GenreEntitySchemaConfiguration());
+            modelBuilder.ApplyConfiguration(new
+                ArtistEntitySchemaConfiguration());
             base.OnModelCreating(modelBuilder);
 
         }
